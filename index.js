@@ -72,5 +72,17 @@ function callTab() {
             }
         });
 }
+//Runs the callTab function every day at 11:59AM. This is to make sure that the call function is not overloading the browser.
+function callAttendance() {
+    (function loop() {
+        let now = new Date();
+        if (now.getHours() === 11 && now.getMinutes() === 59) {
+            callTab();
+        }
+        now = new Date();                  // allow for time passing
+        let delay = 60000 - (now % 60000); // exact ms to next minute interval
+        setTimeout(loop, delay);
+    })();
+}
 
-callTab();
+callAttendance();
