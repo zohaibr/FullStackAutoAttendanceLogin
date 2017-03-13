@@ -1,7 +1,7 @@
 {
   "name": "fullstackautologin",
   "version": "1.0.0",
-  "description": "FullStackc login",
+  "description": "FullStack login",
   "main": "background.js",
   "scripts": {
     "start": "webpack --progress --watch",
