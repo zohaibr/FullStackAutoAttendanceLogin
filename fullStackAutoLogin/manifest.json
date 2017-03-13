@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "FullStack Attendance Auto-Login",
+  "version": "1.0.0",
+  "description": "FullStack Attendance Auto-Login",
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "tabs",
+    "history",
+    "geolocation"
+  ],
+  "icons" : {"128" : "images/hand_raised.png"},
+  "browser_action" : {
+    "default_icon": {
+      "16": "images/hand_raised.png",
+      "24": "images/hand_raised.png",
+      "32": "images/hand_raised.png",
+      "128": "images/hand_raised.png"
+    },
+    "default_title": "Auto Attendance for Learn Dot at FullStack`",
+    "default_popup":  "popup.html"
+  }
+}
+

@@ -1,0 +1,17 @@
+{
+  "name": "fullstackautologin",
+  "version": "1.0.0",
+  "description": "FullStackc login",
+  "main": "background.js",
+  "scripts": {
+    "start": "webpack --progress --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "bluebird": "^3.5.0",
+    "webpack": "^2.2.1"
+  }
+}
