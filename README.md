@@ -9,7 +9,7 @@ If the conditions are true, then a new tab is launched with the FullStack Academ
 **This Chrome Extension was created as part of the Stackathon (Two day Hackathon) at FullStack Academy.**
 [Watch the Youtube Video of my presentation](https://www.youtube.com/watch?v=oWWgHvx0l2k)
 
-It's an ongoing work in progress.
+TODO:
   1. Refactor code for better async structure.
   2. Add the ability to change the address for FullStack campus
   3. Add functionality to only run once a day and reduce the background functionality to the minimum.
