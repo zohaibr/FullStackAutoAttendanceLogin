@@ -28,7 +28,7 @@ const getLat2 =  axios.get("https://maps.googleapis.com/maps/api/geocode/json?ad
 const getLong2 = axios.get("https://maps.googleapis.com/maps/api/geocode/json?address=5+Hanover+Square,+New+York,+NY&key=AIzaSyAuj3vB4T1Rs0I9je3onFDOEBp_qstJ_ys")
     .then(response => response.data.results[0].geometry.location.lng);
 
-//Function to calculate the distance between two locations.
+//Function to calculate the distance between two locations. (Haversine formula)
 function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
     let R = 6371; // Radius of the earth in km
     let dLat = deg2rad(lat2-lat1);  // deg2rad below
@@ -52,7 +52,7 @@ function checkVisitedLog() {
     let currentDate = new Date().getTime();
     return new Promise(function (resolve, reject) {
         chrome.history.search({text: 'learn.fullstackacademy.com', maxResults:1, "startTime": 0}, function(result) {
-            resolve((currentDate - result[0].lastVisitTime) < 28800000);
+            resolve((currentDate - result[0].lastVisitTime) < 2880);
         });
     });
 }
@@ -86,3 +86,5 @@ function callAttendance() {
 }
 
 callAttendance();
+
+
