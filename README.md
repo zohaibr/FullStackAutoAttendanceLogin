@@ -6,7 +6,8 @@ FullStack Auto Login Chrome Extension runs in the background and checks if *the 
 
 If the conditions are true, then a new tab is launched with the FullStack Academy's portal.
 
-**This Chrome Extension was created as part of the Stackathon (Two day Hackathon) as part of the FullStack's curriclum requirement.**
+**This Chrome Extension was created as part of the Stackathon (Two day Hackathon) at FullStack Academy.**
+[Watch the Youtube Video of my presentation](https://www.youtube.com/watch?v=oWWgHvx0l2k)
 
 It's an ongoing work in progress.
   ..* Refactor code for better async structure.
